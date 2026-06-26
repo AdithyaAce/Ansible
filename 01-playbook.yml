@@ -1,8 +1,6 @@
 ---
 -name:ping the server
- host:local
- become:yes
+ host:frontend
  tasks:
    -name:ping the server
    ansible.builtin.ping:
-   
