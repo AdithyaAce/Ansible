@@ -7,8 +7,12 @@
     DURATION: 14HRS
     TRAINER: ADITHYA
   tasks:
-  - name: using global variables
+  - name: using local variables
     vars:
       COURSE: devops with aws
+    ansible.builtin.debug:
+      msg: "Hello {{ COURSE }}, Course duration {{ DURATION }} and trainer is {{ TRAINER }}"
+
+  - name: using global variable
     ansible.builtin.debug:
       msg: "Hello {{ COURSE }}, Course duration {{ DURATION }} and trainer is {{ TRAINER }}"
