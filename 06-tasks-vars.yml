@@ -1,0 +1,14 @@
+---
+- name: variable ###using global variables and local variables
+  hosts: local
+  connection: local
+  vars:
+    COURSE: ansible
+    DURATION: 14HRS
+    TRAINER: ADITHYA
+  tasks:
+  - name: using global variables
+    vars:
+      COURSE: devops with aws
+    ansible.builtin.debug:
+      msg: "Hello {{ COURSE }}, Course duration {{ DURATION }} and trainer is {{ TRAINER }}"
