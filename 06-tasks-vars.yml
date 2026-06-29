@@ -10,6 +10,7 @@
   - name: using local variables
     vars:
       COURSE: devops with aws
+      TRAINER: satyam
     ansible.builtin.debug:
       msg: "Hello {{ COURSE }}, Course duration {{ DURATION }} and trainer is {{ TRAINER }}"
 
