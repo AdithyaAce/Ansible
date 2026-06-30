@@ -3,7 +3,7 @@
   hosts: local
   connection: local
   vars_files:
-  - Course.yml
+   - Course.yml
 
   tasks:
   - name: printingthe variable
