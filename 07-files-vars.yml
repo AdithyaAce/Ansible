@@ -7,5 +7,5 @@
 
   tasks:
   - name: printingthe variable
-  ansible.builtin.debug:
-    msg: "hello course name : {{ COURSE }}, duration : {{ DURATION }}, trainer is : {{ TRAINER }}"
+    ansible.builtin.debug:
+      msg: "hello course name : {{ COURSE }}, duration : {{ DURATION }}, trainer is : {{ TRAINER }}"
