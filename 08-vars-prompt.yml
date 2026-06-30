@@ -15,3 +15,11 @@
   - name: print username
     ansible.builtin.debug:
       msg: "hello username is : {{ USERNAME }} and password is : {{ PASSWORD }}"    
+
+### this will help to make the output invisible 
+
+  tasks: 
+  - name: print without o/p
+    ansible.builtin.debug:
+      msg: "hello username is {{ USERNAME }} and password is : {{ PASSWORD }}"
+    no_log: true  
