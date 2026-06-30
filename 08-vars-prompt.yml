@@ -16,7 +16,6 @@
     ansible.builtin.debug:
       msg: "hello username is : {{ USERNAME }} and password is : {{ PASSWORD }}"    
 
-  tasks: 
   - name: print without o/p
     ansible.builtin.debug:
       msg: "hello username is {{ USERNAME }} and password is : {{ PASSWORD }}"
