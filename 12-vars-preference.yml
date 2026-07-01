@@ -6,7 +6,7 @@
    GREETING: "HELLO FROM PLAY"
 
   vars_file:
-   - course.yml
+  - course.yml
 
   vars_prompt:
    - name: GREETING
