@@ -3,7 +3,7 @@
   hosts: local
   connection: local
   vars:
-   GREETING: "HELLO FROM PLAY"
+   GREETING: HELLO FROM PLAY
 
   vars_file:
   - course.yml
@@ -14,7 +14,7 @@
      private: false
 
   tasks:
-  - name: print the GREETING
+  - name: print the greeting 
     vars:
      GREETING: "HELLO FROM TASKS"
     ansible.builtin.debug:
